@@ -1,0 +1,92 @@
+.product
+    
+    padding-top: 100px
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__name
+        width: 510px
+        text-align: center
+        padding-top: 41px
+        line-height: 32px
+        &_item 
+            font-family: 'Roboto Slab', serif
+            font-size: 24
+            font-weight: 400
+            cursor: pointer
+        &_item.product__name_item
+            margin-top: 30px
+   
+    &__content
+        width: 600px
+        &_box
+            display: flex
+            justify-content: space-between
+            & img
+                width: 500px
+                max-width: 70%
+                object-fit: fill
+                
+        &_list
+            width: 291px
+        &_item
+            margin-bottom: 30px
+        &_item span
+            display: block
+            margin-bottom: 10px 
+            color: $main-color
+        &_title
+            display: inline-block
+            font-family: 'Roboto Slab', serif
+            font-weight: 500
+            color: $main-color
+            font-style: 24px
+            line-height: 32px
+            margin-bottom: 20px
+            padding-top: 20px
+        &_text
+            margin-bottom: 25px
+            line-height: 21px
+
+// slick
+.product-prev
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    
+.product-prev,
+.product-next
+    border: none
+    background: transparent
+    cursor: pointer
+    padding: 0
+
+.product__name_item.slick-current
+    font-weight: 800
+    font-size: 36px
+    color: $main-color
+
+// seafood
+.seafood
+    background: url(../images/advamtages.png) center (center/cover) no-repeat
+    padding: 120px 0 30px
+    font-family: Roboto Slab, serif
+    font-weight: bold
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+    color: #fff
+    &__items
+        display: flex
+        justify-content: space-around
+    &__item
+        background: url(../images/shell.svg) center (center/cover) no-repeat transparent
+        width: 180px
+        min-height: 165px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        
+        

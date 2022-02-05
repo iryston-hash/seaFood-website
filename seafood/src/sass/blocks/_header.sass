@@ -1,0 +1,152 @@
+$main-color:#001E64
+
+.header
+    position: relative
+ 
+    &__content
+        background: url(../images/header-bg.png) top (center/cover) no-repeat
+        margin-top: -140px
+        max-height: 100%
+        padding-bottom: 20px
+       
+    &__top
+        display: flex
+        justify-content: space-between
+        background: transparent
+    &__logo
+        z-index: 1
+        margin-top: 1rem
+        min-height: 100%
+        cursor: pointer
+    &__menu
+        position: absolute
+        margin-top: 10px  
+    &__phone
+        height: 1px
+    &__icon 
+        z-index: 50
+        margin-left: auto
+        margin-top: 1.5rem
+        width: 1.75rem
+        padding: 1px
+        & img
+            min-width: 50px
+.menu
+    margin-top: 1rem
+
+    &__list
+        display: flex
+
+    // margin will be given to all expect for the 1st child
+    &__item + .menu__item 
+        margin-left: 1.875rem
+        font-size: 1.125rem
+        
+    &__link
+        display: block
+        font-weight: 500
+        font-size: 1.125rem
+        line-height: 1.3125rem
+        color: $main-color
+        &:hover
+            border-bottom: 1px solid $main-color
+ 
+
+                
+.title
+    color: $main-color
+    font-weight: 700
+    font-size: calc( 4vw + 1em )
+    line-height: 3rem
+    padding-top: 180px
+    font-family: Roboto Slab, serif
+    margin-left: 20px
+
+//burger 
+.menu__btn
+    z-index: 2
+    display: none
+    border: none
+    width: 40px
+    background: transparent
+    padding: 1px
+    margin-top: 11px
+    
+    & span
+        margin: 2.5px
+        display: block
+        height: 4px
+        background: $main-color  
+        border-radius: 15% 
+        
+
+
+// slick
+.header-slider
+    margin-top: 100px
+    max-width: 32.625rem
+    padding-left: 7rem
+    padding-top: 3.5625rem
+    padding-bottom: 8.4375rem
+    &__text
+        color: #fdfcfc
+        text-shadow: 1px 1px 2px black
+        font-style: 1.125rem
+        line-height: 1.375rem
+
+
+.slick-prev,
+.slick-next
+    background-color: transparent
+    border: none
+    cursor: pointer
+    padding: 0
+    position: absolute
+    left: 2.5rem
+.slick-prev
+    top: 30px
+.slick-next
+    top: 20rem
+    bottom: 0
+    
+.slick-dots 
+    position: absolute
+    left: -0.1875rem
+    top: 4rem
+    bottom: 4.6875rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    & button
+        display: block
+        position: absolute
+        border: none
+        background: transparent
+        padding: 0
+        color: #fff 
+        opacity: .5
+        font-size: 1.5rem
+        line-height: 1rem
+        cursor: pointer
+        &::before
+            content: '0'
+.slick-active button
+    opacity: 1
+
+
+// languages
+.header__content-languages
+    display: flex
+    justify-content: start
+    margin-left: 150px
+    font-family: Roboto
+    font-weight: 300
+    line-height: 1.3125rem
+    color: #FFFFFF
+
+.header__content-link__active
+    font-weight: 500
+   
+    
+
+    
